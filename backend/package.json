@@ -1,0 +1,36 @@
+{
+  "name": "eco-server",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest",
+    "test:cov": "vitest run --coverage",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "keywords": [],
+  "author": "Lucas Prazeres",
+  "license": "MIT",
+  "description": "Your personal carbon footpritnt calculator",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@graphql-tools/merge": "^9.0.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0"
+  }
+}

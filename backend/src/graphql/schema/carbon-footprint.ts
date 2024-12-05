@@ -5,7 +5,7 @@ export const carbonFootprintTypeDefs = `#graphql
 `
 
 export const carbonFootprintResolver = {
-    Query: {
-        message: () => 'hello world'
-    }
+  Query: {
+    message: () => 'hello world',
+  },
 }

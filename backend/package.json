@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "test": "vitest",
+    "test": "vitest --run",
+    "test:watch": "vitest",
     "test:cov": "vitest run --coverage",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint --max-warnings 0 src tests",
+    "lint:fix": "eslint --fix src tests",
+    "build": "tsup src",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "Lucas Prazeres",

@@ -1,5 +1,7 @@
 import { createFootprintCalculator } from '@eco/calculator/carbon-footprint-calculator'
 import { CalculateFootprintInput } from '@eco/models/carbon-footprint'
+import { AppError } from '@eco/models/error'
+import { GraphQLError } from 'graphql'
 
 export const carbonFootprintTypeDefs = `#graphql
     type Query {
@@ -46,6 +48,16 @@ export const carbonFootprintResolver = {
     calculateFootprint: (
       _: unknown,
       { input }: { input: CalculateFootprintInput },
-    ) => calculator.calculate(input),
+    ) => {
+      try {
+        calculator.calculate(input)
+      } catch (error) {
+        if (error instanceof AppError) {
+          throw new GraphQLError(error.message, {
+            extensions: { fieldErrors: error.fieldErrors },
+          })
+        }
+      }
+    },
   },
 }

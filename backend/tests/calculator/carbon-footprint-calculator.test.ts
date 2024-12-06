@@ -1,5 +1,6 @@
+import { createFootprintCalculator } from '@eco/calculator/carbon-footprint-calculator'
+import { AppError } from '@eco/models/error'
 import { describe, it, expect } from 'vitest'
-import { createFootprintCalculator } from './carbon-footprint-calculator'
 
 describe('Footprint Calculator', () => {
   it('should to return a calculator instance', () => {
@@ -70,5 +71,20 @@ describe('Footprint Calculator', () => {
       value: 0,
       unit: 'kgCO2e/year',
     })
+  })
+
+  it('should not allow negative numbers', () => {
+    // arrange
+    const calculator = createFootprintCalculator()
+    const calculate = () =>
+      calculator.calculate({
+        airTravelsPerYear: -10,
+        electricityUsageKWhPerMonth: -1,
+        transportationFuelGallonsPerMonth: -2,
+        transportationFuelType: 'gasoline',
+      })
+
+    // assert
+    expect(calculate).toThrowError(AppError)
   })
 })

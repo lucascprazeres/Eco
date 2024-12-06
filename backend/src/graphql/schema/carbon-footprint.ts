@@ -1,11 +1,11 @@
-import { createFootprintCalculator } from "@eco/calculator/carbon-footprint-calculator"
-import { CalculateFootprintInput } from "@eco/models/carbon-footprint"
+import { createFootprintCalculator } from '@eco/calculator/carbon-footprint-calculator'
+import { CalculateFootprintInput } from '@eco/models/carbon-footprint'
 
 export const carbonFootprintTypeDefs = `#graphql
     type Query {
       hello: String
     }
-    
+
     type Mutation {
       calculateFootprint(input: CalculateFootprintInput!): CalculateFootprintOutput!
     }
@@ -40,10 +40,12 @@ const calculator = createFootprintCalculator()
 
 export const carbonFootprintResolver = {
   Query: {
-    hello: () => 'hello world'
+    hello: () => 'hello world',
   },
   Mutation: {
-    calculateFootprint: (_: any, { input }: { input: CalculateFootprintInput }) =>
-      calculator.calculate(input)
-  }
+    calculateFootprint: (
+      _: unknown,
+      { input }: { input: CalculateFootprintInput },
+    ) => calculator.calculate(input),
+  },
 }

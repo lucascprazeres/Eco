@@ -9,7 +9,7 @@ import { z, ZodError } from 'zod'
 export function createFootprintCalculator() {
   const yearlyEmissionsFactor = 12 // months in a year
   const electricityUsageFactor = 0.426 // kg/kWh CO2 (US average)
-  const airTravelFactor = 0.207
+  const airTravelFactor = 0.207 // kg C02 per travel
   const transportationFactors = {
     // kg CO2 per gallon
     gasoline: 8.78,
@@ -71,6 +71,9 @@ export function createFootprintCalculator() {
       if (error instanceof ZodError) {
         throw new AppError('Invalid params', error)
       }
+
+      console.log('error: ', error)
+      throw error
     }
   }
 

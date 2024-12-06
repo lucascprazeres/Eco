@@ -31,7 +31,7 @@ async function startServer(httpServer: Server) {
     })
 
     httpServer.on('error', (error) => {
-      console.log(`internal server error: `, error)
+      console.log(`error: ${error.message}`)
       reject(error)
     })
   })

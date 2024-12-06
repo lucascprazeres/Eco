@@ -5,6 +5,10 @@ type FieldError = {
   message: string
 }
 
+export enum ErrorEnum {
+  BadRequest = 'BAD_REQUEST',
+}
+
 export class AppError extends Error {
   fieldErrors: FieldError[]
 

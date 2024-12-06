@@ -1,5 +1,6 @@
 import { createApolloServer } from '@eco/graphql/server'
 import { CalculateFootprintInput } from '@eco/models/carbon-footprint'
+import { ErrorEnum } from '@eco/models/error'
 import { describe, it, assert, expect } from 'vitest'
 
 describe('GraphQL Server', () => {
@@ -102,7 +103,7 @@ describe('GraphQL Server', () => {
     expect(response.body.singleResult.errors).toEqual([
       {
         extensions: {
-          code: 422,
+          code: ErrorEnum.BadRequest,
           fieldErrors: [
             {
               field: 'electricityUsageKWhPerMonth',

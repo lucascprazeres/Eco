@@ -1,6 +1,5 @@
 import { RESULTS_PAGE } from '@eco/constants/routes'
-import { CarbonFootprintInput, TabsEnum } from '@eco/models/carbon-footprint'
-import { TabPanel } from '@mui/lab'
+import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 import { useCallback } from 'react'
@@ -31,70 +30,68 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
   const travelsPerYearError = formState.errors?.airTravelsPerYear?.message
 
   return (
-    <TabPanel value={TabsEnum.Travel} style={{ height: '100%', width: '100%' }}>
-      <form
-        onSubmit={handleSubmit(handleLastSubmit)}
-        style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
+    <form
+      onSubmit={handleSubmit(handleLastSubmit)}
+      style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
+    >
+      <Box
+        width="100%"
+        height="100%"
+        display="flex"
+        flexDirection="column"
+        gap={4}
       >
-        <Box
-          width="100%"
-          height="100%"
-          display="flex"
-          flexDirection="column"
-          gap={4}
+        <Typography
+          variant="h6"
+          fontWeight="bold"
+          fontFamily="ubuntu"
+          color="secondary.dark"
         >
-          <Typography
-            variant="h6"
-            fontWeight="bold"
-            fontFamily="ubuntu"
-            color="secondary.dark"
-          >
-            How many flights do you take per year?
-          </Typography>
+          How many flights do you take per year?
+        </Typography>
 
-          <TextField
-            {...register('airTravelsPerYear', {
-              valueAsNumber: true,
-              required: {
-                value: true,
-                message:
-                  'Please insert how many flights do you take (or 0 if none)',
-              },
-            })}
-            label="Flights (per year)"
-            type="number"
-            fullWidth
-            helperText={travelsPerYearError}
-            error={!!travelsPerYearError}
-          />
+        <TextField
+          {...register('airTravelsPerYear', {
+            valueAsNumber: true,
+            required: {
+              value: true,
+              message:
+                'Please insert how many flights do you take (or 0 if none)',
+            },
+          })}
+          label="Flights (per year)"
+          type="number"
+          fullWidth
+          helperText={travelsPerYearError}
+          error={!!travelsPerYearError}
+        />
 
-          <Box
-            display="flex"
-            alignSelf="flex-end"
-            alignItems="center"
-            justifyContent="space-between"
-            width="100%"
-            bottom={0}
+        <Box
+          display="flex"
+          alignSelf="flex-end"
+          alignItems="center"
+          justifyContent="space-between"
+          width="100%"
+          bottom={0}
+        >
+          <Button
+            variant="outlined"
+            onClick={onGoBack}
+            sx={{ fontWeight: 'bold' }}
           >
-            <Button
-              variant="outlined"
-              onClick={onGoBack}
-              sx={{ fontWeight: 'bold' }}
-            >
-              Go back
-            </Button>
-            <Button
-              type="submit"
-              color="primary"
-              variant="contained"
-              disabled={!!travelsPerYearError}
-              sx={{ fontWeight: 'bold' }}
-            >
-              Next
-            </Button>
-          </Box>
+            Go back
+          </Button>
+          <Button
+            type="submit"
+            color="primary"
+            variant="contained"
+            disabled={!!travelsPerYearError}
+            sx={{ fontWeight: 'bold' }}
+          >
+            Next
+          </Button>
         </Box>
-      </form>
-    </TabPanel>
+      </Box>
+    </form>
   )
 }

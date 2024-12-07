@@ -1,5 +1,4 @@
-import { CarbonFootprintInput, TabsEnum } from '@eco/models/carbon-footprint'
-import { TabPanel } from '@mui/lab'
+import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import {
   Box,
   Button,
@@ -41,111 +40,106 @@ export function TransportationPanel({
   const error = formState.errors?.transportationFuelGallonsPerMonth?.message
 
   return (
-    <TabPanel
-      value={TabsEnum.Transporation}
-      style={{ height: '100%', width: '100%' }}
+    <form
+      onSubmit={handleSubmit(handleGoToNextTab)}
+      style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
     >
-      <form
-        onSubmit={handleSubmit(handleGoToNextTab)}
-        style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
+      <Box
+        width="100%"
+        height="100%"
+        display="flex"
+        flexDirection="column"
+        gap={4}
       >
-        <Box
-          width="100%"
-          height="100%"
-          display="flex"
-          flexDirection="column"
-          gap={4}
-        >
-          <Box>
-            <Typography
-              variant="h6"
-              fontWeight="bold"
-              fontFamily="ubuntu"
-              color="secondary.dark"
-            >
-              What type of fuel does your vehicle use?
-            </Typography>
-
-            <RadioGroup
-              name="transporationFuelType"
-              value={field.value}
-              onChange={field.onChange}
-            >
-              <Box display="flex" alignItems="center" gap={1}>
-                <FormControlLabel
-                  value="gasoline"
-                  label="Gasoline"
-                  control={<Radio />}
-                />
-                <FormControlLabel
-                  label="Diesel"
-                  value="diesel"
-                  control={<Radio />}
-                />
-                <FormControlLabel
-                  label="Ethanol"
-                  value="ethanol"
-                  control={<Radio />}
-                />
-              </Box>
-            </RadioGroup>
-
-            <Typography variant="caption" color="error">
-              {fieldState.error?.message}
-            </Typography>
-          </Box>
-
+        <Box>
           <Typography
             variant="h6"
             fontWeight="bold"
             fontFamily="ubuntu"
             color="secondary.dark"
           >
-            How many gallons of fuel do you use in a month?
+            What type of fuel does your vehicle use?
           </Typography>
 
-          <TextField
-            {...register('transportationFuelGallonsPerMonth', {
-              valueAsNumber: true,
-              required: {
-                value: true,
-                message: 'Please insert your fuel usage (or 0 if none)',
-              },
-            })}
-            label="Fuel (gallons)"
-            type="number"
-            style={{ width: '100%' }}
-            helperText={error}
-            error={!!error}
-          />
-
-          <Box
-            display="flex"
-            alignSelf="flex-end"
-            alignItems="center"
-            justifyContent="space-between"
-            width="100%"
-            bottom={0}
+          <RadioGroup
+            name="transporationFuelType"
+            value={field.value}
+            onChange={field.onChange}
           >
-            <Button
-              variant="outlined"
-              onClick={onGoBack}
-              sx={{ fontWeight: 'bold' }}
-            >
-              Go back
-            </Button>
-            <Button
-              type="submit"
-              color="primary"
-              variant="contained"
-              disabled={!!error}
-              sx={{ fontWeight: 'bold' }}
-            >
-              Next
-            </Button>
-          </Box>
+            <Box display="flex" alignItems="center" gap={1}>
+              <FormControlLabel
+                value="gasoline"
+                label="Gasoline"
+                control={<Radio />}
+              />
+              <FormControlLabel
+                label="Diesel"
+                value="diesel"
+                control={<Radio />}
+              />
+              <FormControlLabel
+                label="Ethanol"
+                value="ethanol"
+                control={<Radio />}
+              />
+            </Box>
+          </RadioGroup>
+
+          <Typography variant="caption" color="error">
+            {fieldState.error?.message}
+          </Typography>
         </Box>
-      </form>
-    </TabPanel>
+
+        <Typography
+          variant="h6"
+          fontWeight="bold"
+          fontFamily="ubuntu"
+          color="secondary.dark"
+        >
+          How many gallons of fuel do you use in a month?
+        </Typography>
+
+        <TextField
+          {...register('transportationFuelGallonsPerMonth', {
+            valueAsNumber: true,
+            required: {
+              value: true,
+              message: 'Please insert your fuel usage (or 0 if none)',
+            },
+          })}
+          label="Fuel (gallons)"
+          type="number"
+          style={{ width: '100%' }}
+          helperText={error}
+          error={!!error}
+        />
+
+        <Box
+          display="flex"
+          alignSelf="flex-end"
+          alignItems="center"
+          justifyContent="space-between"
+          width="100%"
+          bottom={0}
+        >
+          <Button
+            variant="outlined"
+            onClick={onGoBack}
+            sx={{ fontWeight: 'bold' }}
+          >
+            Go back
+          </Button>
+          <Button
+            type="submit"
+            color="primary"
+            variant="contained"
+            disabled={!!error}
+            sx={{ fontWeight: 'bold' }}
+          >
+            Next
+          </Button>
+        </Box>
+      </Box>
+    </form>
   )
 }

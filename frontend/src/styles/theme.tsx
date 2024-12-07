@@ -1,4 +1,3 @@
-import { green } from '@mui/material/colors'
 import {
   createTheme,
   ThemeProvider as MuiThemeProvider,
@@ -7,7 +6,12 @@ import { ReactElement } from 'react'
 
 const theme = createTheme({
   palette: {
-    primary: { ...green, contrastText: '#FFF' },
+    primary: {
+      dark: '#2FB86E',
+      main: '#34CB79',
+      light: '#E1FAEC',
+      contrastText: '#FFF',
+    },
     secondary: {
       dark: '#322153',
       main: '#8257E5',

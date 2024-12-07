@@ -52,7 +52,12 @@ export function TransportationPanel({
         gap={4}
       >
         <Box>
-          <Typography variant="h6" fontWeight="bold" fontFamily="ubuntu">
+          <Typography
+            variant="h6"
+            fontWeight="bold"
+            fontFamily="ubuntu"
+            color="secondary.dark"
+          >
             What type of fuel does your vehicle use?
           </Typography>
 
@@ -85,7 +90,12 @@ export function TransportationPanel({
           </Typography>
         </Box>
 
-        <Typography variant="h6" fontWeight="bold" fontFamily="ubuntu">
+        <Typography
+          variant="h6"
+          fontWeight="bold"
+          fontFamily="ubuntu"
+          color="secondary.dark"
+        >
           How many gallons of fuel do you use in a month?
         </Typography>
 
@@ -112,7 +122,11 @@ export function TransportationPanel({
           width="100%"
           bottom={0}
         >
-          <Button variant="outlined" onClick={onGoBack}>
+          <Button
+            variant="outlined"
+            onClick={onGoBack}
+            sx={{ fontWeight: 'bold' }}
+          >
             Go back
           </Button>
           <Button
@@ -120,6 +134,7 @@ export function TransportationPanel({
             color="primary"
             variant="contained"
             disabled={!!error}
+            sx={{ fontWeight: 'bold' }}
           >
             Next
           </Button>

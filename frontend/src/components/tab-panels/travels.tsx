@@ -1,3 +1,4 @@
+import { RESULTS_PAGE } from '@eco/constants/routes'
 import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
@@ -13,19 +14,20 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
   const router = useRouter()
   const { register, handleSubmit, formState } =
     useFormContext<CarbonFootprintInput>()
-  const error = formState.errors?.airTravelsPerYear?.message
 
   const handleLastSubmit = useCallback(
     async (data: CarbonFootprintInput) => {
       try {
         await onSubmit(data)
-        router.push('/result')
+        router.push(RESULTS_PAGE)
       } catch (err) {
         console.log(err)
       }
     },
     [router, onSubmit],
   )
+
+  const travelsPerYearError = formState.errors?.airTravelsPerYear?.message
 
   return (
     <form
@@ -39,7 +41,12 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
         flexDirection="column"
         gap={4}
       >
-        <Typography variant="h6" fontWeight="bold" fontFamily="ubuntu">
+        <Typography
+          variant="h6"
+          fontWeight="bold"
+          fontFamily="ubuntu"
+          color="secondary.dark"
+        >
           How many flights do you take per year?
         </Typography>
 
@@ -55,8 +62,8 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
           label="Flights (per year)"
           type="number"
           fullWidth
-          helperText={error}
-          error={!!error}
+          helperText={travelsPerYearError}
+          error={!!travelsPerYearError}
         />
 
         <Box
@@ -67,14 +74,19 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
           width="100%"
           bottom={0}
         >
-          <Button variant="outlined" onClick={onGoBack}>
+          <Button
+            variant="outlined"
+            onClick={onGoBack}
+            sx={{ fontWeight: 'bold' }}
+          >
             Go back
           </Button>
           <Button
             type="submit"
             color="primary"
             variant="contained"
-            disabled={!!error}
+            disabled={!!travelsPerYearError}
+            sx={{ fontWeight: 'bold' }}
           >
             Next
           </Button>

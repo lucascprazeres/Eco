@@ -15,7 +15,7 @@ import {
 
 interface FootprintContextData {
   footprint: CarbonFootprint | null
-  handleCalculateFootprint: (data: CarbonFootprintInput) => void
+  handleCalculateFootprint: (data: CarbonFootprintInput) => Promise<void>
 }
 
 interface FootprintProviderProps {
@@ -41,7 +41,7 @@ export function FootprintProvider({ children }: FootprintProviderProps) {
         },
       })
 
-      setFootprint(data?.calculateFootprint as any)
+      setFootprint(data?.calculateFootprint as unknown as CarbonFootprint)
     },
     [calculateFootprint],
   )

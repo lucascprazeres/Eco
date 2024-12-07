@@ -10,7 +10,7 @@ export function Logo() {
         variant="h4"
         color="secondary.dark"
         fontFamily="ubuntu"
-        fontWeight="700"
+        fontWeight="bold"
       >
         Eco
       </Typography>

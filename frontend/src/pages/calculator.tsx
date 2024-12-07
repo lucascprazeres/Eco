@@ -22,11 +22,7 @@ export default function Calculator() {
     mode: 'onSubmit',
   })
 
-  const { footprint, handleCalculateFootprint } = useFootprint()
-
-  useEffect(() => {
-    console.log(footprint)
-  }, [footprint])
+  const { handleCalculateFootprint } = useFootprint()
 
   return (
     <DefaultLayout>
@@ -42,7 +38,7 @@ export default function Calculator() {
           <TabContext value={tab}>
             <TabList onChange={(_, next) => setCurrentTab(next)}>
               <Tab label="Energy" value={TabsEnum.EnergyUsage} />
-              <Tab label="Transportation" value={TabsEnum.Transporation} />
+              <Tab label="Transport" value={TabsEnum.Transporation} />
               <Tab label="Travel" value={TabsEnum.Travel} />
             </TabList>
             <TabPanel value={TabsEnum.EnergyUsage} style={{ height: '100%', width: '100%' }}>

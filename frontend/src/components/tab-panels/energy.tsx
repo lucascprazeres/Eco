@@ -28,7 +28,12 @@ export function EnergyPanel({ onClickNext }: EnergyPanelProps) {
         flexDirection="column"
         gap={4}
       >
-        <Typography variant="h6" fontWeight="bold" fontFamily="ubuntu">
+        <Typography
+          variant="h6"
+          fontWeight="bold"
+          fontFamily="ubuntu"
+          color="secondary.dark"
+        >
           Enter your monthly electricity usage
         </Typography>
 
@@ -60,6 +65,7 @@ export function EnergyPanel({ onClickNext }: EnergyPanelProps) {
             color="primary"
             variant="contained"
             disabled={!!error}
+            sx={{ fontWeight: 'bold' }}
           >
             Next
           </Button>

@@ -13,7 +13,6 @@ export default function Home() {
         variant="h3"
         color="secondary.dark"
         fontFamily="ubuntu"
-        fontWeight="bold"
         marginBottom={1}
       >
         Let&apos;s calculate your carbon footprint!

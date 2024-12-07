@@ -30,3 +30,9 @@ export interface CalculateFootprintMutationInput {
 export interface CalculateFootprintMutationOutput {
   calculateFootprint: CarbonFootprint
 }
+
+export enum TabsEnum {
+  EnergyUsage = 0,
+  Transporation = 1,
+  Travel = 2
+}

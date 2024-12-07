@@ -1,4 +1,4 @@
-import { CalculatorForm } from '@eco/pages/calculator'
+import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import {
   Box,
   Button,
@@ -12,11 +12,15 @@ import { useController, useFormContext } from 'react-hook-form'
 
 interface TransportationPanelProps {
   onClickNext: () => void
+  onGoBack: () => void
 }
 
-export function TransportationPanel({ onClickNext }: TransportationPanelProps) {
+export function TransportationPanel({
+  onClickNext,
+  onGoBack,
+}: TransportationPanelProps) {
   const { register, handleSubmit, formState, control } =
-    useFormContext<CalculatorForm>()
+    useFormContext<CarbonFootprintInput>()
 
   const { field, fieldState } = useController({
     name: 'transportationFuelType',
@@ -24,7 +28,7 @@ export function TransportationPanel({ onClickNext }: TransportationPanelProps) {
     rules: {
       required: {
         value: true,
-        message: 'Select at least one option',
+        message: 'Please select at least one option',
       },
     },
   })
@@ -33,7 +37,7 @@ export function TransportationPanel({ onClickNext }: TransportationPanelProps) {
     onClickNext()
   }
 
-  const error = formState.errors?.transporationFuelGallons?.message
+  const error = formState.errors?.transportationFuelGallonsPerMonth?.message
 
   return (
     <form
@@ -86,10 +90,11 @@ export function TransportationPanel({ onClickNext }: TransportationPanelProps) {
         </Typography>
 
         <TextField
-          {...register('transporationFuelGallons', {
+          {...register('transportationFuelGallonsPerMonth', {
+            valueAsNumber: true,
             required: {
               value: true,
-              message: 'Required',
+              message: 'Please insert your fuel usage (or 0 if none)',
             },
           })}
           label="Fuel (gallons)"
@@ -107,8 +112,15 @@ export function TransportationPanel({ onClickNext }: TransportationPanelProps) {
           width="100%"
           bottom={0}
         >
-          <Button variant="outlined">Go back</Button>
-          <Button type="submit" color="primary" variant="contained">
+          <Button variant="outlined" onClick={onGoBack}>
+            Go back
+          </Button>
+          <Button
+            type="submit"
+            color="primary"
+            variant="contained"
+            disabled={!!error}
+          >
             Next
           </Button>
         </Box>

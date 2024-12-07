@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.12.0-rc.4",
+    "@apollo/experimental-nextjs-app-support": "^0.11.7",
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
     "@hookform/resolvers": "^3.9.1",
     "@mui/lab": "^6.0.0-beta.18",
     "@mui/material": "^6.1.10",
+    "graphql": "^16.9.0",
     "next": "15.0.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.54.0",
     "zod": "^3.23.8"
   },

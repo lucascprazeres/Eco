@@ -1,19 +1,20 @@
-import { CalculatorForm } from '@eco/pages/calculator'
+import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import { useFormContext } from 'react-hook-form'
 
-export function TravelPanel() {
-  const { register, handleSubmit, formState } = useFormContext<CalculatorForm>()
+interface TravelPanelProps {
+  onGoBack: () => void
+  onSubmit: (data: CarbonFootprintInput) => void
+}
 
-  function handleAddTravels(data: CalculatorForm) {
-    console.log(data)
-  }
-
-  const error = formState.errors?.airTravel?.message
+export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
+  const { register, handleSubmit, formState } =
+    useFormContext<CarbonFootprintInput>()
+  const error = formState.errors?.airTravelsPerYear?.message
 
   return (
     <form
-      onSubmit={handleSubmit(handleAddTravels)}
+      onSubmit={handleSubmit(onSubmit)}
       style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
     >
       <Box
@@ -28,10 +29,12 @@ export function TravelPanel() {
         </Typography>
 
         <TextField
-          {...register('airTravel', {
+          {...register('airTravelsPerYear', {
+            valueAsNumber: true,
             required: {
               value: true,
-              message: 'Required',
+              message:
+                'Please insert how many flights do you take (or 0 if none)',
             },
           })}
           label="Flights (per year)"
@@ -49,8 +52,15 @@ export function TravelPanel() {
           width="100%"
           bottom={0}
         >
-          <Button variant="outlined">Go back</Button>
-          <Button type="submit" color="primary" variant="contained">
+          <Button variant="outlined" onClick={onGoBack}>
+            Go back
+          </Button>
+          <Button
+            type="submit"
+            color="primary"
+            variant="contained"
+            disabled={!!error}
+          >
             Next
           </Button>
         </Box>

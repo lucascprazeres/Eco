@@ -1,4 +1,4 @@
-import { CalculatorForm } from '@eco/pages/calculator'
+import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import { useFormContext } from 'react-hook-form'
 
@@ -7,13 +7,14 @@ interface EnergyPanelProps {
 }
 
 export function EnergyPanel({ onClickNext }: EnergyPanelProps) {
-  const { register, handleSubmit, formState } = useFormContext<CalculatorForm>()
+  const { register, handleSubmit, formState } =
+    useFormContext<CarbonFootprintInput>()
 
   function handleGoToNextTab() {
     onClickNext()
   }
 
-  const error = formState.errors?.electricityUsage?.message
+  const error = formState.errors?.electricityUsageKWhPerMonth?.message
 
   return (
     <form
@@ -32,10 +33,11 @@ export function EnergyPanel({ onClickNext }: EnergyPanelProps) {
         </Typography>
 
         <TextField
-          {...register('electricityUsage', {
+          {...register('electricityUsageKWhPerMonth', {
+            valueAsNumber: true,
             required: {
               value: true,
-              message: 'Required',
+              message: 'Please insert your electric usage',
             },
           })}
           label="Electricity usage (Kwh/month)"
@@ -49,12 +51,16 @@ export function EnergyPanel({ onClickNext }: EnergyPanelProps) {
           display="flex"
           alignSelf="flex-end"
           alignItems="center"
-          justifyContent="space-between"
+          justifyContent="flex-end"
           width="100%"
           bottom={0}
         >
-          <Button variant="outlined">Go back</Button>
-          <Button type="submit" color="primary" variant="contained">
+          <Button
+            type="submit"
+            color="primary"
+            variant="contained"
+            disabled={!!error}
+          >
             Next
           </Button>
         </Box>

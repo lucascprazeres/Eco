@@ -2,23 +2,12 @@ import { DefaultLayout } from '@eco/components/default-layout'
 import { EnergyPanel } from '@eco/components/tab-panels/energy'
 import { TransportationPanel } from '@eco/components/tab-panels/transportation'
 import { TravelPanel } from '@eco/components/tab-panels/travels'
+import { CarbonFootprintInput, FuelTypeEnum } from '@eco/models/carbon-footprint'
+import { useFootprint } from '@eco/providers/footprint-provider'
 import { TabContext, TabList, TabPanel } from '@mui/lab'
 import { Box, Tab } from '@mui/material'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
-
-export type CalculatorForm = {
-  electricityUsage: number,
-  transportationFuelType: FuelTypeEnum,
-  transporationFuelGallons: number,
-  airTravel: number
-}
-
-enum FuelTypeEnum {
-  Gasoline = 'gasoline',
-  Diesel = 'diesel',
-  Ethanol = 'ethanol'
-}
 
 enum TabsEnum {
   EnergyUsage = 0,
@@ -29,9 +18,15 @@ enum TabsEnum {
 export default function Calculator() {
   const [tab, setCurrentTab] = useState(0)
 
-  const form = useForm<CalculatorForm>({
+  const form = useForm<CarbonFootprintInput>({
     mode: 'onSubmit',
   })
+
+  const { footprint, handleCalculateFootprint } = useFootprint()
+
+  useEffect(() => {
+    console.log(footprint)
+  }, [footprint])
 
   return (
     <DefaultLayout>
@@ -54,10 +49,13 @@ export default function Calculator() {
               <EnergyPanel onClickNext={() => setCurrentTab(TabsEnum.Transporation)} />
             </TabPanel>
             <TabPanel value={TabsEnum.Transporation} style={{ height: '100%', width: '100%' }}>
-              <TransportationPanel onClickNext={() => setCurrentTab(TabsEnum.Travel)} />
+              <TransportationPanel
+                onClickNext={() => setCurrentTab(TabsEnum.Travel)}
+                onGoBack={() => setCurrentTab(TabsEnum.EnergyUsage)}
+              />
             </TabPanel>
             <TabPanel value={TabsEnum.Travel} style={{ height: '100%', width: '100%' }}>
-              <TravelPanel />
+              <TravelPanel onGoBack={() => setCurrentTab(TabsEnum.Transporation)} onSubmit={handleCalculateFootprint} />
             </TabPanel>
           </TabContext>
         </FormProvider>

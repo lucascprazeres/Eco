@@ -14,7 +14,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
           rel="stylesheet"
         />
-        <link rel="shortcut icon" href="icon.svg" type="image/x-icon" />
+        <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
       </Head>
       <body>
         <Main />

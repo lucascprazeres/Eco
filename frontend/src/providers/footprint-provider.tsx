@@ -14,7 +14,7 @@ import {
 } from 'react'
 
 interface FootprintContextData {
-  footprint: CarbonFootprint
+  footprint: CarbonFootprint | null
   handleCalculateFootprint: (data: CarbonFootprintInput) => void
 }
 
@@ -27,9 +27,7 @@ const FootprintContext = createContext<FootprintContextData>(
 )
 
 export function FootprintProvider({ children }: FootprintProviderProps) {
-  const [footprint, setFootprint] = useState<CarbonFootprint>(
-    {} as CarbonFootprint,
-  )
+  const [footprint, setFootprint] = useState<CarbonFootprint | null>(null)
 
   const [calculateFootprint] = useMutation<CalculateFootprintMutationOutput>(
     CALCULATE_CARBON_FOOTPRINT,

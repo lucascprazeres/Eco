@@ -8,7 +8,7 @@ export function Logo() {
     <Box display="flex" alignItems="center" gap={1}>
       <Typography
         variant="h4"
-        color="primary.dark"
+        color="secondary.dark"
         fontFamily="ubuntu"
         fontWeight="700"
       >

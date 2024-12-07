@@ -1,20 +1,35 @@
 import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
 import { Box, Button, TextField, Typography } from '@mui/material'
+import { useRouter } from 'next/router'
+import { useCallback } from 'react'
 import { useFormContext } from 'react-hook-form'
 
 interface TravelPanelProps {
   onGoBack: () => void
-  onSubmit: (data: CarbonFootprintInput) => void
+  onSubmit: (data: CarbonFootprintInput) => Promise<void>
 }
 
 export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
+  const router = useRouter()
   const { register, handleSubmit, formState } =
     useFormContext<CarbonFootprintInput>()
   const error = formState.errors?.airTravelsPerYear?.message
 
+  const handleLastSubmit = useCallback(
+    async (data: CarbonFootprintInput) => {
+      try {
+        await onSubmit(data)
+        router.push('/result')
+      } catch (err) {
+        console.log(err)
+      }
+    },
+    [router, onSubmit],
+  )
+
   return (
     <form
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(handleLastSubmit)}
       style={{ display: 'flex', flexDirection: 'column', height: '100%' }}
     >
       <Box

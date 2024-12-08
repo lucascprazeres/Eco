@@ -19,7 +19,7 @@ describe('EnergyPanel', () => {
     const mockOnClickNext = vi.fn()
 
     // act
-    render(<EnergyPanel onClickNext={mockOnClickNext} />)
+    const result = render(<EnergyPanel onClickNext={mockOnClickNext} />)
 
     const title = screen.getByText(/Enter your monthly electricity usage/i)
     const input = screen.getByLabelText(/Electricity usage/i)
@@ -30,6 +30,7 @@ describe('EnergyPanel', () => {
     expect(input).toBeInTheDocument()
     expect(button).toBeInTheDocument()
     expect(button).not.toBeDisabled()
+    expect(result).toMatchSnapshot()
   })
 
   it('should be able to display validation errors', () => {

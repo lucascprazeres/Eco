@@ -29,7 +29,9 @@ describe('TravelPanel', () => {
     const mockOnSubmit = vi.fn()
 
     // act
-    render(<TravelPanel onGoBack={mockOnGoBack} onSubmit={mockOnSubmit} />)
+    const result = render(
+      <TravelPanel onGoBack={mockOnGoBack} onSubmit={mockOnSubmit} />,
+    )
 
     const title = screen.getByText(/How many flights do you take per year\?/i)
     const input = screen.getByLabelText(/Flights \(per year\)/i)
@@ -42,6 +44,7 @@ describe('TravelPanel', () => {
     expect(backButton).toBeInTheDocument()
     expect(nextButton).toBeInTheDocument()
     expect(nextButton).not.toBeDisabled()
+    expect(result).toMatchSnapshot()
   })
 
   it('should be able to display validation error for invalid input', () => {

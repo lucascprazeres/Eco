@@ -1,0 +1,1357 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FootprintPieChart > should be able to render correcly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1537u48-MuiResponsiveChart-container"
+      >
+        <svg
+          class="css-1evyvmv-MuiChartsSurface-root"
+          height="350"
+          viewBox="0 0 300 350"
+          width="300"
+        >
+          <title />
+          <desc />
+          <defs />
+          <g>
+            <g
+              transform="translate(5, 175)"
+            >
+              <g>
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-0 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M25.133,41.772L0,0Z"
+                  fill="#34CB79"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-1 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M-33.525,-35.392L0,0Z"
+                  fill="#322153"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-2 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M-10.48,-47.61L0,0Z"
+                  fill="#8257E5"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+              </g>
+            </g>
+            <g
+              transform="translate(5, 175)"
+            >
+              <g>
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            class="MuiChartsLegend-root MuiChartsLegend-column css-nsbw82-MuiChartsLegend-root"
+          >
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-0"
+              transform="translate(305 145)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#34CB79"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Electricity Usage (%)
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-1"
+              transform="translate(305 175)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#322153"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Transportation fuel (%)
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-2"
+              transform="translate(305 205)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#8257E5"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Air travel (%)
+                </tspan>
+              </text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      id="mui_measurement_span"
+      style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; white-space: pre; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; text-anchor: start; fill: rgba(0, 0, 0, 0.87);"
+    >
+      Air travel (%)
+    </span>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1537u48-MuiResponsiveChart-container"
+    >
+      <svg
+        class="css-1evyvmv-MuiChartsSurface-root"
+        height="350"
+        viewBox="0 0 300 350"
+        width="300"
+      >
+        <title />
+        <desc />
+        <defs />
+        <g>
+          <g
+            transform="translate(5, 175)"
+          >
+            <g>
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-0 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M25.133,41.772L0,0Z"
+                fill="#34CB79"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-1 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M-33.525,-35.392L0,0Z"
+                fill="#322153"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-2 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M-10.48,-47.61L0,0Z"
+                fill="#8257E5"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+            </g>
+          </g>
+          <g
+            transform="translate(5, 175)"
+          >
+            <g>
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+            </g>
+          </g>
+        </g>
+        <g
+          class="MuiChartsLegend-root MuiChartsLegend-column css-nsbw82-MuiChartsLegend-root"
+        >
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-0"
+            transform="translate(305 145)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#34CB79"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Electricity Usage (%)
+              </tspan>
+            </text>
+          </g>
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-1"
+            transform="translate(305 175)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#322153"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Transportation fuel (%)
+              </tspan>
+            </text>
+          </g>
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-2"
+            transform="translate(305 205)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#8257E5"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Air travel (%)
+              </tspan>
+            </text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FootprintPieChart > should be able to render correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1537u48-MuiResponsiveChart-container"
+      >
+        <svg
+          class="css-1evyvmv-MuiChartsSurface-root"
+          height="350"
+          viewBox="0 0 300 350"
+          width="300"
+        >
+          <title />
+          <desc />
+          <defs />
+          <g>
+            <g
+              transform="translate(5, 175)"
+            >
+              <g>
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-0 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M25.133,41.772L0,0Z"
+                  fill="#34CB79"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-1 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M-33.525,-35.392L0,0Z"
+                  fill="#322153"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-2 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M-10.48,-47.61L0,0Z"
+                  fill="#8257E5"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+              </g>
+            </g>
+            <g
+              transform="translate(5, 175)"
+            >
+              <g>
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            class="MuiChartsLegend-root MuiChartsLegend-column css-nsbw82-MuiChartsLegend-root"
+          >
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-0"
+              transform="translate(305 145)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#34CB79"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Electricity Usage (%)
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-1"
+              transform="translate(305 175)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#322153"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Transportation fuel (%)
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-2"
+              transform="translate(305 205)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#8257E5"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Air travel (%)
+                </tspan>
+              </text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      id="mui_measurement_span"
+      style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; white-space: pre; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; text-anchor: start; fill: rgba(0, 0, 0, 0.87);"
+    >
+      Air travel (%)
+    </span>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1537u48-MuiResponsiveChart-container"
+    >
+      <svg
+        class="css-1evyvmv-MuiChartsSurface-root"
+        height="350"
+        viewBox="0 0 300 350"
+        width="300"
+      >
+        <title />
+        <desc />
+        <defs />
+        <g>
+          <g
+            transform="translate(5, 175)"
+          >
+            <g>
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-0 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M25.133,41.772L0,0Z"
+                fill="#34CB79"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-1 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M-33.525,-35.392L0,0Z"
+                fill="#322153"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-2 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M-10.48,-47.61L0,0Z"
+                fill="#8257E5"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+            </g>
+          </g>
+          <g
+            transform="translate(5, 175)"
+          >
+            <g>
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+            </g>
+          </g>
+        </g>
+        <g
+          class="MuiChartsLegend-root MuiChartsLegend-column css-nsbw82-MuiChartsLegend-root"
+        >
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-0"
+            transform="translate(305 145)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#34CB79"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Electricity Usage (%)
+              </tspan>
+            </text>
+          </g>
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-1"
+            transform="translate(305 175)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#322153"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Transportation fuel (%)
+              </tspan>
+            </text>
+          </g>
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-2"
+            transform="translate(305 205)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#8257E5"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Air travel (%)
+              </tspan>
+            </text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FootprintPieChart > should render the pie chart with data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1537u48-MuiResponsiveChart-container"
+      >
+        <svg
+          class="css-1evyvmv-MuiChartsSurface-root"
+          height="350"
+          viewBox="0 0 300 350"
+          width="300"
+        >
+          <title />
+          <desc />
+          <defs />
+          <g>
+            <g
+              transform="translate(5, 175)"
+            >
+              <g>
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-0 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M25.133,41.772L0,0Z"
+                  fill="#34CB79"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-1 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M-33.525,-35.392L0,0Z"
+                  fill="#322153"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+                <path
+                  class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-2 css-1mzvvpl-MuiPieArc-root"
+                  cursor="unset"
+                  d="M-10.48,-47.61L0,0Z"
+                  fill="#8257E5"
+                  filter="none"
+                  opacity="1"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  visibility="hidden"
+                />
+              </g>
+            </g>
+            <g
+              transform="translate(5, 175)"
+            >
+              <g>
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+                <text
+                  class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                  style="opacity: 0; transform: none;"
+                />
+              </g>
+            </g>
+          </g>
+          <g
+            class="MuiChartsLegend-root MuiChartsLegend-column css-nsbw82-MuiChartsLegend-root"
+          >
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-0"
+              transform="translate(305 145)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#34CB79"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Electricity Usage (%)
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-1"
+              transform="translate(305 175)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#322153"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Transportation fuel (%)
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-2"
+              transform="translate(305 205)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#8257E5"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Air travel (%)
+                </tspan>
+              </text>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <span
+      aria-hidden="true"
+      id="mui_measurement_span"
+      style="position: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; white-space: pre; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; text-anchor: start; fill: rgba(0, 0, 0, 0.87);"
+    >
+      Air travel (%)
+    </span>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1537u48-MuiResponsiveChart-container"
+    >
+      <svg
+        class="css-1evyvmv-MuiChartsSurface-root"
+        height="350"
+        viewBox="0 0 300 350"
+        width="300"
+      >
+        <title />
+        <desc />
+        <defs />
+        <g>
+          <g
+            transform="translate(5, 175)"
+          >
+            <g>
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-0 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M25.133,41.772L0,0Z"
+                fill="#34CB79"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-1 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M-33.525,-35.392L0,0Z"
+                fill="#322153"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+              <path
+                class="MuiPieArc-root MuiPieArc-series-auto-generated-id-0 MuiPieArc-data-index-2 css-1mzvvpl-MuiPieArc-root"
+                cursor="unset"
+                d="M-10.48,-47.61L0,0Z"
+                fill="#8257E5"
+                filter="none"
+                opacity="1"
+                stroke-linejoin="round"
+                stroke-width="1"
+                visibility="hidden"
+              />
+            </g>
+          </g>
+          <g
+            transform="translate(5, 175)"
+          >
+            <g>
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+              <text
+                class="MuiPieArcLabel-root MuiPieArcLabel-series-auto-generated-id-0 css-ixpz1i-MuiPieArcLabel-root"
+                style="opacity: 0; transform: none;"
+              />
+            </g>
+          </g>
+        </g>
+        <g
+          class="MuiChartsLegend-root MuiChartsLegend-column css-nsbw82-MuiChartsLegend-root"
+        >
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-0"
+            transform="translate(305 145)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#34CB79"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Electricity Usage (%)
+              </tspan>
+            </text>
+          </g>
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-1"
+            transform="translate(305 175)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#322153"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Transportation fuel (%)
+              </tspan>
+            </text>
+          </g>
+          <g
+            class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-pie-id-auto-generated-id-0-2"
+            transform="translate(305 205)"
+          >
+            <rect
+              class="MuiChartsLegend-itemBackground"
+              fill="transparent"
+              height="24"
+              style="pointer-events: none; cursor: unset;"
+              width="29"
+              x="-2"
+              y="-12"
+            />
+            <rect
+              class="MuiChartsLegend-mark"
+              fill="#8257E5"
+              height="20"
+              style="pointer-events: none;"
+              width="20"
+              x="0"
+              y="-10"
+            />
+            <text
+              dominant-baseline="central"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              text-anchor="start"
+              x="25"
+              y="0"
+            >
+              <tspan
+                dominant-baseline="central"
+                dy="0px"
+                x="25"
+              >
+                Air travel (%)
+              </tspan>
+            </text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

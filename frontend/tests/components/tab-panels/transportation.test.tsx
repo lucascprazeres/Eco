@@ -23,7 +23,7 @@ describe('TransportationPanel', () => {
     const mockOnGoBack = vi.fn()
 
     // act
-    render(
+    const result = render(
       <TransportationPanel
         onClickNext={mockOnClickNext}
         onGoBack={mockOnGoBack}
@@ -47,6 +47,7 @@ describe('TransportationPanel', () => {
     expect(nextButton).toBeInTheDocument()
     expect(backButton).toBeInTheDocument()
     expect(nextButton).not.toBeDisabled()
+    expect(result).toMatchSnapshot()
   })
 
   it('should be able to display validation error for fuel type', () => {

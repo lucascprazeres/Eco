@@ -1,4 +1,5 @@
 import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
+import { validateNonNegative } from '@eco/utils/form'
 import {
   Box,
   Button,
@@ -105,6 +106,9 @@ export function TransportationPanel({
             required: {
               value: true,
               message: 'Please insert your fuel usage (or 0 if none)',
+            },
+            validate: {
+              nonnegative: (value) => validateNonNegative('fuel amount', value),
             },
           })}
           label="Fuel (gallons)"

@@ -1,4 +1,5 @@
 import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
+import { validateNonNegative } from '@eco/utils/form'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import { useFormContext } from 'react-hook-form'
 
@@ -43,6 +44,10 @@ export function EnergyPanel({ onClickNext }: EnergyPanelProps) {
             required: {
               value: true,
               message: 'Please insert your electric usage',
+            },
+            validate: {
+              nonnegative: (value) =>
+                validateNonNegative('electricity usage', value),
             },
           })}
           label="Electricity usage (Kwh/month)"

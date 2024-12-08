@@ -1,5 +1,6 @@
 import { RESULTS_PAGE } from '@eco/constants/routes'
 import { CarbonFootprintInput } from '@eco/models/carbon-footprint'
+import { validateNonNegative } from '@eco/utils/form'
 import { Box, Button, TextField, Typography } from '@mui/material'
 import { useRouter } from 'next/router'
 import { useCallback } from 'react'
@@ -14,7 +15,6 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
   const router = useRouter()
   const { register, handleSubmit, formState } =
     useFormContext<CarbonFootprintInput>()
-
   const handleLastSubmit = useCallback(
     async (data: CarbonFootprintInput) => {
       try {
@@ -57,6 +57,9 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
               value: true,
               message:
                 'Please insert how many flights do you take (or 0 if none)',
+            },
+            validate: {
+              nonnegative: (value) => validateNonNegative('flights', value),
             },
           })}
           label="Flights (per year)"

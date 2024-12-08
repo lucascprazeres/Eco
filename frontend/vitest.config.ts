@@ -13,7 +13,7 @@ export default defineConfig({
       provider: 'v8',
       exclude: [
         '**/node_modules/**',
-        '**/src/lib/**',
+        '**/src/graphql/**',
         '**/.next/**',
         '**/.{idea,git,cache,output,temp}/**',
         '**/src/styles/**',

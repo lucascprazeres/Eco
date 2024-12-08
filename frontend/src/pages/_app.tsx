@@ -1,4 +1,4 @@
-import { ApolloClientProvider } from '@eco/lib/apollo/provider'
+import { ApolloClientProvider } from '@eco/graphql/apollo/provider'
 import { FootprintProvider } from '@eco/providers/footprint-provider'
 import '@eco/styles/globals.css'
 import { ThemeProvider } from '@eco/styles/theme'

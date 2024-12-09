@@ -1,7 +1,8 @@
-import { describe, it, expect, vi, afterEach, Mock } from 'vitest'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render, screen, cleanup } from '@testing-library/react'
 import { FootprintTable } from '@eco/components/footprint-table'
 import { useFootprint } from '@eco/providers/footprint-provider'
+import { footprintMock } from '../mocks/footprint'
 
 vi.mock('@eco/providers/footprint-provider')
 
@@ -13,14 +14,9 @@ describe('FootprintTable', () => {
 
   it('should be able to render correctly', () => {
     // arrange
-    // eslint-disable-next-line prettier/prettier
-    (useFootprint as Mock).mockReturnValueOnce({
-      footprint: {
-        electricity: { value: 1200, unit: 'kgCO2e/year' },
-        transportation: { value: 150, unit: 'kgCO2e/year' },
-        airTravel: { value: 100, unit: 'kgCO2e/year' },
-        total: { value: 2000, unit: 'kgCO2e/year' },
-      },
+    // @ts-expect-error disabled warning because typescript doesn't recognize the hook is mocked
+    useFootprint.mockReturnValueOnce({
+      footprint: footprintMock,
     })
 
     // act
@@ -49,8 +45,8 @@ describe('FootprintTable', () => {
 
   it('should be able to handle an empty footprint', () => {
     // arrange
-    // eslint-disable-next-line prettier/prettier
-    (useFootprint as Mock).mockReturnValue({ footprint: null })
+    // @ts-expect-error disabled warning because typescript doesn't recognize the lib is mocked
+    useFootprint.mockReturnValue({ footprint: null })
 
     // act
     render(<FootprintTable />)

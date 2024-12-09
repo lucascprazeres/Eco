@@ -7,7 +7,7 @@ import {
 } from '@eco/models/carbon-footprint'
 import {
   createContext,
-  ReactElement,
+  PropsWithChildren,
   useCallback,
   useContext,
   useState,
@@ -18,15 +18,11 @@ interface FootprintContextData {
   handleCalculateFootprint: (data: CarbonFootprintInput) => Promise<void>
 }
 
-interface FootprintProviderProps {
-  children: ReactElement | ReactElement[]
-}
-
 const FootprintContext = createContext<FootprintContextData>(
   {} as FootprintContextData,
 )
 
-export function FootprintProvider({ children }: FootprintProviderProps) {
+export function FootprintProvider({ children }: PropsWithChildren) {
   const [footprint, setFootprint] = useState<CarbonFootprint | null>(null)
 
   const [calculateFootprint] = useMutation<CalculateFootprintMutationOutput>(

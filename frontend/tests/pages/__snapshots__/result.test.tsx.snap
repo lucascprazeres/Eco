@@ -1,0 +1,242 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Result Page > should render the page with a footprint 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiBox-root css-21eb5z"
+      >
+        <header
+          class="MuiBox-root css-1utcncn"
+        >
+          <div
+            class="MuiBox-root css-axw7ok"
+          >
+            <h4
+              class="MuiTypography-root MuiTypography-h4 css-zg625t-MuiTypography-root"
+            >
+              Eco
+            </h4>
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/src/assets/logo.svg"
+              style="color: transparent;"
+              width="40"
+            />
+          </div>
+        </header>
+        <main
+          class="MuiBox-root css-16too2"
+        >
+          <div
+            class="MuiBox-root css-1esezgf"
+          >
+            <div
+              class="MuiBox-root css-axw7ok"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 css-ve8gwu-MuiTypography-root"
+              >
+                This is your Carbon Footprint
+              </h5>
+              <img
+                alt=""
+                data-nimg="1"
+                decoding="async"
+                height="32"
+                loading="lazy"
+                src="/src/assets/smile.svg"
+                style="color: transparent;"
+                width="32"
+              />
+            </div>
+            <div
+              class="MuiBox-root css-1lekzkb"
+            >
+              <div>
+                Mocked FootprintPieChart
+              </div>
+              <div>
+                Mocked FootprintTable
+              </div>
+            </div>
+            <div
+              class="MuiBox-root css-0"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-1ghywoa-MuiTypography-root"
+              >
+                Congratulations! You took the first step
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-1m3a417-MuiTypography-root"
+              >
+                Your carbon footprint is a snapshot of your current environmental impact. Small changes in your daily habits—like using public transport, reducing energy consumption, or cutting food waste—can make a big difference. Try adjusting your behavior and come back to see how your footprint improves.
+              </p>
+            </div>
+            <div
+              class="MuiBox-root css-17ea04y"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-fq2dir-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Try again!
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiBox-root css-21eb5z"
+    >
+      <header
+        class="MuiBox-root css-1utcncn"
+      >
+        <div
+          class="MuiBox-root css-axw7ok"
+        >
+          <h4
+            class="MuiTypography-root MuiTypography-h4 css-zg625t-MuiTypography-root"
+          >
+            Eco
+          </h4>
+          <img
+            alt=""
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/src/assets/logo.svg"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+      </header>
+      <main
+        class="MuiBox-root css-16too2"
+      >
+        <div
+          class="MuiBox-root css-1esezgf"
+        >
+          <div
+            class="MuiBox-root css-axw7ok"
+          >
+            <h5
+              class="MuiTypography-root MuiTypography-h5 css-ve8gwu-MuiTypography-root"
+            >
+              This is your Carbon Footprint
+            </h5>
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              height="32"
+              loading="lazy"
+              src="/src/assets/smile.svg"
+              style="color: transparent;"
+              width="32"
+            />
+          </div>
+          <div
+            class="MuiBox-root css-1lekzkb"
+          >
+            <div>
+              Mocked FootprintPieChart
+            </div>
+            <div>
+              Mocked FootprintTable
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-0"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-1ghywoa-MuiTypography-root"
+            >
+              Congratulations! You took the first step
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-1m3a417-MuiTypography-root"
+            >
+              Your carbon footprint is a snapshot of your current environmental impact. Small changes in your daily habits—like using public transport, reducing energy consumption, or cutting food waste—can make a big difference. Try adjusting your behavior and come back to see how your footprint improves.
+            </p>
+          </div>
+          <div
+            class="MuiBox-root css-17ea04y"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-fq2dir-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              Try again!
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -15,6 +15,7 @@ export function TravelPanel({ onGoBack, onSubmit }: TravelPanelProps) {
   const router = useRouter()
   const { register, handleSubmit, formState } =
     useFormContext<CarbonFootprintInput>()
+
   const handleLastSubmit = useCallback(
     async (data: CarbonFootprintInput) => {
       try {

@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, Mock, afterEach } from 'vitest'
+import { describe, it, expect, vi, afterEach } from 'vitest'
 import { render, screen, fireEvent, cleanup } from '@testing-library/react'
 import { EnergyPanel } from '@eco/components/tab-panels/energy'
 import { useFormContext } from 'react-hook-form'
@@ -35,8 +35,8 @@ describe('EnergyPanel', () => {
 
   it('should be able to display validation errors', () => {
     // arrange
-    // eslint-disable-next-line prettier/prettier
-    (useFormContext as Mock).mockReturnValueOnce({
+    // @ts-expect-error disabled warning because typescript doesn't recognize the lib is mocked
+    useFormContext.mockReturnValueOnce({
       ...useFormContextMockReturn,
       formState: {
         errors: {

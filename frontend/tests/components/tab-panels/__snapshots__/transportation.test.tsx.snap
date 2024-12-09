@@ -1,5 +1,514 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`TransportationPanel > should be able to render correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        style="display: flex; flex-direction: column; height: 100%;"
+      >
+        <div
+          class="MuiBox-root css-nf1kcv"
+        >
+          <div
+            class="MuiBox-root css-0"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-b5iqwz-MuiTypography-root"
+            >
+              What type of fuel does your vehicle use?
+            </h6>
+            <div
+              class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
+              role="radiogroup"
+            >
+              <div
+                class="MuiBox-root css-axw7ok"
+              >
+                <label
+                  class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13lvt8g-MuiButtonBase-root-MuiRadio-root"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-j8yymo"
+                      name="transporationFuelType"
+                      type="radio"
+                      value="gasoline"
+                    />
+                    <span
+                      class="css-1qiat4j"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1bz1rr0-MuiSvgIcon-root"
+                        data-testid="RadioButtonUncheckedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                        />
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-o8rdeq-MuiSvgIcon-root"
+                        data-testid="RadioButtonCheckedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                  >
+                    Gasoline
+                  </span>
+                </label>
+                <label
+                  class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13lvt8g-MuiButtonBase-root-MuiRadio-root"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-j8yymo"
+                      name="transporationFuelType"
+                      type="radio"
+                      value="diesel"
+                    />
+                    <span
+                      class="css-1qiat4j"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1bz1rr0-MuiSvgIcon-root"
+                        data-testid="RadioButtonUncheckedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                        />
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-o8rdeq-MuiSvgIcon-root"
+                        data-testid="RadioButtonCheckedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                  >
+                    Diesel
+                  </span>
+                </label>
+                <label
+                  class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+                >
+                  <span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13lvt8g-MuiButtonBase-root-MuiRadio-root"
+                  >
+                    <input
+                      class="PrivateSwitchBase-input css-j8yymo"
+                      name="transporationFuelType"
+                      type="radio"
+                      value="ethanol"
+                    />
+                    <span
+                      class="css-1qiat4j"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1bz1rr0-MuiSvgIcon-root"
+                        data-testid="RadioButtonUncheckedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                        />
+                      </svg>
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-o8rdeq-MuiSvgIcon-root"
+                        data-testid="RadioButtonCheckedIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span
+                    class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                  >
+                    Ethanol
+                  </span>
+                </label>
+              </div>
+            </div>
+            <span
+              class="MuiTypography-root MuiTypography-caption css-8gz0an-MuiTypography-root"
+            />
+          </div>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-b5iqwz-MuiTypography-root"
+          >
+            How many gallons of fuel do you use in a month?
+          </h6>
+          <div
+            class="MuiFormControl-root MuiTextField-root css-1xp5r68-MuiFormControl-root-MuiTextField-root"
+            style="width: 100%;"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r1:"
+              id=":r1:-label"
+            >
+              Fuel (gallons)
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+                id=":r1:"
+                type="number"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-81qg8w"
+                >
+                  <span>
+                    Fuel (gallons)
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-14i6vh8"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-uah78b-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              Go back
+            </button>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-r9p8f3-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="submit"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>,
+  "container": <div>
+    <form
+      style="display: flex; flex-direction: column; height: 100%;"
+    >
+      <div
+        class="MuiBox-root css-nf1kcv"
+      >
+        <div
+          class="MuiBox-root css-0"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-b5iqwz-MuiTypography-root"
+          >
+            What type of fuel does your vehicle use?
+          </h6>
+          <div
+            class="MuiFormGroup-root MuiRadioGroup-root css-1mac7pt-MuiFormGroup-root"
+            role="radiogroup"
+          >
+            <div
+              class="MuiBox-root css-axw7ok"
+            >
+              <label
+                class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13lvt8g-MuiButtonBase-root-MuiRadio-root"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-j8yymo"
+                    name="transporationFuelType"
+                    type="radio"
+                    value="gasoline"
+                  />
+                  <span
+                    class="css-1qiat4j"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1bz1rr0-MuiSvgIcon-root"
+                      data-testid="RadioButtonUncheckedIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-o8rdeq-MuiSvgIcon-root"
+                      data-testid="RadioButtonCheckedIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                >
+                  Gasoline
+                </span>
+              </label>
+              <label
+                class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13lvt8g-MuiButtonBase-root-MuiRadio-root"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-j8yymo"
+                    name="transporationFuelType"
+                    type="radio"
+                    value="diesel"
+                  />
+                  <span
+                    class="css-1qiat4j"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1bz1rr0-MuiSvgIcon-root"
+                      data-testid="RadioButtonUncheckedIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-o8rdeq-MuiSvgIcon-root"
+                      data-testid="RadioButtonCheckedIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                >
+                  Diesel
+                </span>
+              </label>
+              <label
+                class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-19opgx6-MuiFormControlLabel-root"
+              >
+                <span
+                  class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-root MuiRadio-colorPrimary css-13lvt8g-MuiButtonBase-root-MuiRadio-root"
+                >
+                  <input
+                    class="PrivateSwitchBase-input css-j8yymo"
+                    name="transporationFuelType"
+                    type="radio"
+                    value="ethanol"
+                  />
+                  <span
+                    class="css-1qiat4j"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1bz1rr0-MuiSvgIcon-root"
+                      data-testid="RadioButtonUncheckedIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-o8rdeq-MuiSvgIcon-root"
+                      data-testid="RadioButtonCheckedIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                >
+                  Ethanol
+                </span>
+              </label>
+            </div>
+          </div>
+          <span
+            class="MuiTypography-root MuiTypography-caption css-8gz0an-MuiTypography-root"
+          />
+        </div>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-b5iqwz-MuiTypography-root"
+        >
+          How many gallons of fuel do you use in a month?
+        </h6>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1xp5r68-MuiFormControl-root-MuiTextField-root"
+          style="width: 100%;"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r1:"
+            id=":r1:-label"
+          >
+            Fuel (gallons)
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r1:"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-81qg8w"
+              >
+                <span>
+                  Fuel (gallons)
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-14i6vh8"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-colorPrimary css-uah78b-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Go back
+          </button>
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-r9p8f3-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="submit"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`TransportationPanel > should render correctly 1`] = `
 {
   "asFragment": [Function],

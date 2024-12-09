@@ -19,7 +19,7 @@ export default function Result() {
     if (!footprint) {
       router.push(HOME_PAGE)
     }
-  }, [footprint, router])
+  }, [footprint])
 
   return (
     <DefaultLayout>

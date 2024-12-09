@@ -1,0 +1,404 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Calculator Page > should render correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="MuiBox-root css-21eb5z"
+      >
+        <header
+          class="MuiBox-root css-1utcncn"
+        >
+          <div
+            class="MuiBox-root css-axw7ok"
+          >
+            <h4
+              class="MuiTypography-root MuiTypography-h4 css-zg625t-MuiTypography-root"
+            >
+              Eco
+            </h4>
+            <img
+              alt=""
+              data-nimg="1"
+              decoding="async"
+              height="40"
+              loading="lazy"
+              src="/src/assets/logo.svg"
+              style="color: transparent;"
+              width="40"
+            />
+          </div>
+        </header>
+        <main
+          class="MuiBox-root css-16too2"
+        >
+          <div
+            class="MuiBox-root css-wj04gs"
+          >
+            <div
+              class="MuiTabs-root css-jhczcq-MuiTabs-root"
+            >
+              <div
+                class="MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"
+                style="overflow: hidden; margin-bottom: 0px;"
+              >
+                <div
+                  class="MuiTabs-flexContainer css-1wxkzlj-MuiTabs-flexContainer"
+                  role="tablist"
+                >
+                  <button
+                    aria-controls="mui-p-65864-P-0"
+                    aria-selected="true"
+                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+                    id="mui-p-65864-T-0"
+                    role="tab"
+                    tabindex="0"
+                    type="button"
+                  >
+                    Energy
+                  </button>
+                  <button
+                    aria-controls="mui-p-65864-P-1"
+                    aria-selected="false"
+                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+                    id="mui-p-65864-T-1"
+                    role="tab"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    Transport
+                  </button>
+                  <button
+                    aria-controls="mui-p-65864-P-2"
+                    aria-selected="false"
+                    class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+                    id="mui-p-65864-T-2"
+                    role="tab"
+                    tabindex="-1"
+                    type="button"
+                  >
+                    Travel
+                  </button>
+                </div>
+                <span
+                  class="MuiTabs-indicator css-1qltlow-MuiTabs-indicator"
+                  style="left: 0px; width: 0px;"
+                />
+              </div>
+            </div>
+            <div
+              aria-labelledby="mui-p-65864-T-0"
+              class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
+              id="mui-p-65864-P-0"
+              role="tabpanel"
+              style="height: 100%; width: 100%;"
+            >
+              <form
+                style="display: flex; flex-direction: column; height: 100%;"
+              >
+                <div
+                  class="MuiBox-root css-nf1kcv"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6 css-b5iqwz-MuiTypography-root"
+                  >
+                    Enter your monthly electricity usage
+                  </h6>
+                  <div
+                    class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+                  >
+                    <label
+                      class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+                      data-shrink="false"
+                      for=":r0:"
+                      id=":r0:-label"
+                    >
+                      Electricity usage (Kwh/month)
+                    </label>
+                    <div
+                      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root"
+                    >
+                      <input
+                        aria-invalid="false"
+                        class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+                        id=":r0:"
+                        name="electricityUsageKWhPerMonth"
+                        type="number"
+                        value=""
+                      />
+                      <fieldset
+                        aria-hidden="true"
+                        class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+                      >
+                        <legend
+                          class="css-81qg8w"
+                        >
+                          <span>
+                            Electricity usage (Kwh/month)
+                          </span>
+                        </legend>
+                      </fieldset>
+                    </div>
+                  </div>
+                  <div
+                    class="MuiBox-root css-vlf2ew"
+                  >
+                    <button
+                      class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-r9p8f3-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="submit"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div
+              aria-labelledby="mui-p-65864-T-1"
+              class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
+              hidden=""
+              id="mui-p-65864-P-1"
+              role="tabpanel"
+              style="height: 100%; width: 100%;"
+            />
+            <div
+              aria-labelledby="mui-p-65864-T-2"
+              class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
+              hidden=""
+              id="mui-p-65864-P-2"
+              role="tabpanel"
+              style="height: 100%; width: 100%;"
+            />
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="MuiBox-root css-21eb5z"
+    >
+      <header
+        class="MuiBox-root css-1utcncn"
+      >
+        <div
+          class="MuiBox-root css-axw7ok"
+        >
+          <h4
+            class="MuiTypography-root MuiTypography-h4 css-zg625t-MuiTypography-root"
+          >
+            Eco
+          </h4>
+          <img
+            alt=""
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/src/assets/logo.svg"
+            style="color: transparent;"
+            width="40"
+          />
+        </div>
+      </header>
+      <main
+        class="MuiBox-root css-16too2"
+      >
+        <div
+          class="MuiBox-root css-wj04gs"
+        >
+          <div
+            class="MuiTabs-root css-jhczcq-MuiTabs-root"
+          >
+            <div
+              class="MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"
+              style="overflow: hidden; margin-bottom: 0px;"
+            >
+              <div
+                class="MuiTabs-flexContainer css-1wxkzlj-MuiTabs-flexContainer"
+                role="tablist"
+              >
+                <button
+                  aria-controls="mui-p-65864-P-0"
+                  aria-selected="true"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+                  id="mui-p-65864-T-0"
+                  role="tab"
+                  tabindex="0"
+                  type="button"
+                >
+                  Energy
+                </button>
+                <button
+                  aria-controls="mui-p-65864-P-1"
+                  aria-selected="false"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+                  id="mui-p-65864-T-1"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  Transport
+                </button>
+                <button
+                  aria-controls="mui-p-65864-P-2"
+                  aria-selected="false"
+                  class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+                  id="mui-p-65864-T-2"
+                  role="tab"
+                  tabindex="-1"
+                  type="button"
+                >
+                  Travel
+                </button>
+              </div>
+              <span
+                class="MuiTabs-indicator css-1qltlow-MuiTabs-indicator"
+                style="left: 0px; width: 0px;"
+              />
+            </div>
+          </div>
+          <div
+            aria-labelledby="mui-p-65864-T-0"
+            class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
+            id="mui-p-65864-P-0"
+            role="tabpanel"
+            style="height: 100%; width: 100%;"
+          >
+            <form
+              style="display: flex; flex-direction: column; height: 100%;"
+            >
+              <div
+                class="MuiBox-root css-nf1kcv"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 css-b5iqwz-MuiTypography-root"
+                >
+                  Enter your monthly electricity usage
+                </h6>
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink="false"
+                    for=":r0:"
+                    id=":r0:-label"
+                  >
+                    Electricity usage (Kwh/month)
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl css-1blp12k-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+                      id=":r0:"
+                      name="electricityUsageKWhPerMonth"
+                      type="number"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-81qg8w"
+                      >
+                        <span>
+                          Electricity usage (Kwh/month)
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                </div>
+                <div
+                  class="MuiBox-root css-vlf2ew"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary css-r9p8f3-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="submit"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            aria-labelledby="mui-p-65864-T-1"
+            class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
+            hidden=""
+            id="mui-p-65864-P-1"
+            role="tabpanel"
+            style="height: 100%; width: 100%;"
+          />
+          <div
+            aria-labelledby="mui-p-65864-T-2"
+            class="MuiTabPanel-root css-13xfq8m-MuiTabPanel-root"
+            hidden=""
+            id="mui-p-65864-P-2"
+            role="tabpanel"
+            style="height: 100%; width: 100%;"
+          />
+        </div>
+      </main>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

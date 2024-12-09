@@ -17,7 +17,7 @@ describe('TransportationPanel', () => {
     cleanup()
   })
 
-  it('should render correctly', () => {
+  it('should be able to render correctly', () => {
     // arrange
     const mockOnClickNext = vi.fn()
     const mockOnGoBack = vi.fn()

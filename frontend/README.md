@@ -28,7 +28,7 @@ This web application provides the interface of the carbon footprint calculator
   npm run dev
 ```
 
-Don't forget to rename the file `.env.example` to `.env` in order to load the application envs
+Don't forget to rename the file `.env.example` to `.env.local` in order to load the application envs
 
 After running the app, you can access the frontend in http://localhost:3001. Make sure you are also running the backend application, to access all features.
 
